@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: daniwebdev/laravel-nginx-fpm:8.3
+    ports:
+      - 8343:80
+    volumes:
+      - ./test/app:/app
