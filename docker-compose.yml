@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: daniwebdev/laravel-nginx-fpm:8.3
+    image: daniwebdev/nginx-php:8.3-fpm
     ports:
       - 8343:80
     volumes:
